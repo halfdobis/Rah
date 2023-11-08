@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Iceland:wght@400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Iceland:wght@400;500;600;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -16,7 +15,7 @@ body {
   margin: 0;
   background: #000;
   overflow: hidden;
-  font-family: 'Iceland', sans-serif;
+  font-family: "Iceland", sans-serif;
 }
 .container {
   color: #cccbcb;
@@ -25,14 +24,14 @@ body {
   animation: fadeInUp 1s ease;
 }
 
-@keyframes fadeInUp{
-  0%{
-      transform: translateX(40px);
-      opacity: 0;
+@keyframes fadeInUp {
+  0% {
+    transform: translateX(40px);
+    opacity: 0;
   }
-  100%{
-      transform: translateX(0px);
-      opacity: 1;
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
 
@@ -72,7 +71,8 @@ li span {
   position: absolute;
   box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.4);
 }
-.giftbox > div:after, .giftbox > div:before {
+.giftbox > div:after,
+.giftbox > div:before {
   position: absolute;
   content: "";
   top: 0;
@@ -86,7 +86,7 @@ li span {
   bottom: 0;
   font-size: 30px;
   font-weight: 700;
-  font-family: 'Iceland', sans-serif;
+  font-family: "Iceland", sans-serif;
   text-align: center;
   transform: rotate(-20deg);
   transform-origin: 0 0;
@@ -104,7 +104,7 @@ li span {
   left: 50%;
   width: 50px;
   transform: translateX(-50%);
-  background: #2C3E50;
+  background: #2c3e50;
 }
 .giftbox .cover > div {
   position: absolute;
@@ -114,14 +114,15 @@ li span {
   top: -50px;
   transform: translateX(-50%);
 }
-.giftbox .cover > div:before, .giftbox .cover > div:after {
+.giftbox .cover > div:before,
+.giftbox .cover > div:after {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   content: "";
-  box-shadow: inset 0 0 0 15px #2C3E50;
+  box-shadow: inset 0 0 0 15px #2c3e50;
   border-radius: 30px;
   transform-origin: 50% 100%;
 }
@@ -142,7 +143,7 @@ li span {
   height: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background: #2C3E50;
+  background: #2c3e50;
 }
 .giftbox .box:after {
   width: 100%;
@@ -161,11 +162,13 @@ li span {
 .step-2 .giftbox:after {
   opacity: 0;
 }
-.step-3 .giftbox, .step-4 .giftbox {
+.step-3 .giftbox,
+.step-4 .giftbox {
   opacity: 0;
   z-index: 1;
 }
-.step-3 .giftbox:after, .step-4 .giftbox:after {
+.step-3 .giftbox:after,
+.step-4 .giftbox:after {
   opacity: 0;
 }
 .step-2 .giftbox .cover {
@@ -176,33 +179,60 @@ li span {
 }
 @keyframes wobble {
   25% {
-      transform: rotate(4deg);
- }
+    transform: rotate(4deg);
+  }
   75% {
-      transform: rotate(-2deg);
- }
+    transform: rotate(-2deg);
+  }
 }
 @keyframes flyUp {
   75% {
-      opacity: 1;
- }
+    opacity: 1;
+  }
   100% {
-      transform: translateY(-1000px) rotate(20deg);
-      opacity: 0;
- }
+    transform: translateY(-1000px) rotate(20deg);
+    opacity: 0;
+  }
 }
 @keyframes flyDown {
   75% {
-      opacity: 1;
- }
+    opacity: 1;
+  }
   100% {
-      transform: translateY(100%);
-      opacity: 0;
- }
+    transform: translateY(100%);
+    opacity: 0;
+  }
 }
 
-@media(max-width: 767px){
-  body{
-      padding: 25px;
+#centerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+
+/* #button {
+  display: none;
+  position: absolute;
+  left: 30%;
+  background-color: #ff1493;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#button:hover {
+  background-color: #ff6bcb;
+} */
+
+@media (max-width: 767px) {
+  body {
+    padding: 25px;
   }
 }
